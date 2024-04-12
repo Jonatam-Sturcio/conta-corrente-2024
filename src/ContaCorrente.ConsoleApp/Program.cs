@@ -1,9 +1,6 @@
-﻿namespace ContaCorrente.ConsoleApp
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
+﻿namespace ContaCorrente.ConsoleApp {
+    internal class Program {
+        static void Main(string[] args) {
             Conta conta1 = new Conta();
             Conta conta2 = new Conta();
             Cliente titular1 = new Cliente();
@@ -17,8 +14,8 @@
             titular2.sobrenome = "Tortelli";
             titular2.cpf = "222.222.222-22";
 
-            conta1.CriarConta(1, 1000, false, titular1);
-            conta2.CriarConta(2, 1000, false, titular2);
+            conta1.CriarConta(1, 2000, 1000, false, titular1);
+            conta2.CriarConta(2, 2000, 1000, false, titular2);
 
             conta1.VisualisarSaldo();
             conta1.Depositar(1000, false);
